@@ -11,10 +11,12 @@ function myCalculator() {
   if (targetNumber == "C") {
     bag = "";
     document.querySelector("#display").innerText = "";
-  } else if (targetNumber == "=") {
+  } 
+  else if (targetNumber == "=") {
     console.log(eval(bag));
     document.querySelector("#display").innerText = eval(bag);
-  } else {
+  }
+   else {
     bag = bag + targetNumber;
     document.querySelector("#display").innerText = bag;
   }
